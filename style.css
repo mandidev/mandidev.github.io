@@ -1,0 +1,29 @@
+h1 {
+    color: black;
+}
+
+body {
+    background: plum;
+}
+
+.link {
+    color: red;
+}
+
+.link:hover { /* Se activa al poner el cursor encima del elemento */
+    color: rgb(245, 69, 69);
+    outline: 2px solid red;
+}
+
+.link:active { /* Se activa al hacer click en el elemento */
+    outline: 2px solid blue;
+}
+
+#show {
+    background: #09f;
+}
+
+input:focus {
+    border: 1px solid #313131;
+    outline: 2px solid red;
+}

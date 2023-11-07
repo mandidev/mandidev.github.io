@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- codificacion -->
+    <meta charset="utf-8">
+    <!-- El ancho de la pagina se adapta al dispositivo -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Titulo de la pagina -->
+    <title>Portfolio</title>
+    <!-- Los bots de google puedan mostrar la pagina -->
+    <meta name="robots" content="index, follow">
+    <!-- Cambiar el color de algunos navegadores -->
+    <meta name="theme-color" content="#09f">
+    <!-- Agregar un icono en la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="./images/me.png">
+    <!-- Agregar descripcion de la pagina -->
+    <meta name="description" content="👨🏻‍💻 Portfolio del desarrollador MandiCoder">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="👨🏻‍💻 Portfolio del programador MandiCoder">
+    <meta property="og:description" content="2 años de experiencia como programador autodidacta">
+    <meta property="og:image" content="./images/logo.jpg">
+    <meta property="og:image:alt" content="Logotipo de mi marca">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio de Reynaldo Magdariaga Rodriguez</h1>
+        <nav>
+            <a class="link" href="#experiencia">Experiencia</a>
+            <a class="link" href="#proyectos">Proyectos</a> <!-- Enlaces Internos -->
+            <a class="link" href="http://mandidev@protonmail.com" target="_blank" rel="noreferrer">Correo</a>
+        </nav>
+    </header>
+
+    <dialog id="dialog">
+        <h1>¿Sabías que puedes abrir una mod al así?</h1>
+        <p>Y es totalmente nativo!</p>
+        <button id="hide">Cerrar modal</button>
+    </dialog>
+
+    <button id="show">Ver más información</button>
+
+    <script>
+        window.show.addEventListener('click', () => {
+            window.dialog.showModal()
+        })
+
+        window.show.addEventListener('click', () => {
+            window.dialog.close()
+        })
+    </script>
+
+    <main>
+        <p>+2 años de experiencia como <strong>Ingeniero de Software.</strong></p>
+        <h2 id="experiencia">Experiencia</h2>
+        <ul>
+            <li><em>Python</em></li>
+            <li><em>Java</em></li>
+            <li><em>Javascript</em></li>
+            <li><em>C++</em></li>
+        </ul>
+
+        <!-- El atributo download obliga a descargar el archivo -->
+        <a download href="./images/me.png">
+            <img src="./images/me.png" alt="Logotipo personal" width="200" title="Logotipo">
+        </a>
+
+        <h2 id="proyectos">Proyectos realizados</h2>
+
+        <aside>
+            <header>
+                <h3>Mis tecnologias favoritas</h3>
+            </header>
+            <ol>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ol>
+        </aside>
+
+        <section>
+            <article>
+                <header>
+                    <h4>Sitios Web</h4>
+                </header>
+                <p>
+                    Desarrollo de un sitio web con una interfaz
+                    amigable y moderna.
+                </p>
+                <footer>
+                    <small>Tecnologias utilizadas: HTML, CSS, javaScript</small>
+                </footer>
+            </article>
+        </section>
+
+        <section>
+            <h2>Preguntas frecuentes</h2>
+
+            <details>
+                <summary>¿Qué estudios tienes?</summary>
+                <p>He estado dedicando dos años a mi estudio de manera autodidacta.</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Formulario de contacto</h2>
+
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Informacion personal</legend>
+
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+
+                    <label style="display: block;">Email:
+                        <input type="email" name="email" placeholder="Escribe tu correo" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informacion adicional</legend>
+
+                    <Label> Telefono:
+                        <input type="tel" name="phone" required>
+                    </Label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros</legend>
+                    <div>
+                        <label for="why">¿Por qué quieres contactar?</label>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="1">Duda</option>
+                            <option value="1">Más información</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="terms">¿Aceptas los términos?</label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                    </div>
+                    <div>
+                        <datalist id="lang">
+                            <option value="JavaScript"></option>
+                            <option value="Python"></option>
+                            <option value="Java"></option>
+                        </datalist>
+                        <label for="">
+                            ¿Con qué lenguaje quieres que te ayude?
+                            <input list="lang" name="lang">
+                        </label>
+                    </div>
+                </fieldset>
+
+
+                <input type="submit" value="Enviar contacto">
+            </form>
+        </section>
+    </main>
+    <footer>
+        Copyright © 2023 - El Portfolio mas bello del mundo
+
+        <ul>
+            <li>
+                <a href="mailto:mandidev@protonmail.com">Correo</a>
+            </li>
+            <li>
+                <a href="tel:+5353601231">Teléfono</a>
+            </li>
+            <li>
+                <a href="https://wa.me/5353601231/?text=Hola">Whatsapp</a>
+            </li>
+            <li>
+                <a href="https://t.me/KOD_16">Telegram</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
